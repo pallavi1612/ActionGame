@@ -1,0 +1,89 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+}
+
+.container{
+    background-image: url('bg2.jpg');
+    background-color: aqua;
+    background-size: cover;
+    height: 48vw;
+    width: 100vw;
+}
+.dino{
+    background-image: url('dino.png');
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 97vw;
+    background-size: 14vw;
+    position: absolute;
+    top: 41vw;
+    left: 82px;
+
+}
+.dragon{
+    background-image: url('dragon.png');
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 97vw;
+    background-size: 13vw;
+    position: absolute;
+    top: 39vw;
+    left: 71vw;
+}
+.appr{
+    visibility: hidden;
+}
+.gameOver{
+    visibility: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 38px;
+    margin-left:44vw ;
+    
+}
+#scoreCount{
+    position: relative;
+    border: 3px solid black;
+    padding: 15px;
+    size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 33px;
+    
+}
+.head{
+    font-size: 34px;
+    position: relative;
+    text-align: center;
+}
+.animateDino{
+    animation: dinos 0.6s linear;
+}
+@keyframes dinos{
+    0%{
+        top: 39vw;
+    }
+    50%{
+        top: 15vw;
+    }
+    100%{
+        top: 39vw;
+    
+    }
+}
+
+.dragonAni{
+    animation: dragonAni 3s linear infinite;
+}
+@keyframes dragonAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+   left: -10vw;
+    }
+}
